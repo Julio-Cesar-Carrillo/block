@@ -1,35 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+
 html{
     font-size: 16px;
 }
 
-/* Redimensión de fuente utilizando rem */
+* {
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+
+
 p{
     font-size: 1rem;
 }
 
 h1{
     font-size: 3rem;
+    margin: 0;
 }
 
 h3{
     font-size: 2rem;
 }
 
-/* clases predefinidas */
-* {
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-}
 
-/* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-/* Diseño de columnas */
+
 .column-1{
     width: 100%;
     float: left;
@@ -60,9 +66,50 @@ body{
     float: left;
 }
 
-/* Otras clases */
 
-@media only screen and (max-width: 600px) {
+
+header {
+    height: 100vh;
+    background-image: url("../img/tierra.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-1 {
+    background-image: url("../img/bosque.jpg");
+}
+
+#card-2 {
+    background-image: url("../img/montaña.jpg");
+}
+
+#card-3 {
+    background-image: url("../img/mar.jpg");
+}
+
+#card-4 {
+    background-image: url("../img/desierto.jfif");
+}
+
+.padding-s {
+    padding: 0.5%;
+}
+
+
+@media only screen and (max-width: 800px) {
 /*reglas*/
     /* column-3 pasará de tener 33.33% a 100% */
     .column-3{
